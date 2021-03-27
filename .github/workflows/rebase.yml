@@ -1,0 +1,31 @@
+name: Rebase against original repo
+
+#on: [push]
+on:
+  schedule:
+    # https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 23 * * *'
+
+env:
+  GITHUB_TOKEN: ${{ secrets.github_token }}
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Git configuration
+      run: |
+        git config user.name "Passw"
+        git config user.email "Passw_Passw@163.com"
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        git remote -vv
+        git branch -vv
+    - name: RUN `git pull master -r`
+      run: |
+        git remote add up https://github.com/ZenithOS/ZenithOS.git
+        git pull up master -r
+        git push origin HEAD:master --force
