@@ -44,7 +44,7 @@ This is basically a read-only repository. Everything happens inside the OS, as i
 
 ## Background
 
-In around November of 2019, [VoidNV](https://github.com/VoidNV) decided to continue Terry's work in a direction that would make it a viable operating system while still keeping the innovative and divine-intellect ideas and design strategies intact.
+In around November of 2019, [Z3N1THM4N](https://github.com/Z3N1THM4N) decided to continue Terry's work in a direction that would make it a viable operating system while still keeping the innovative and divine-intellect ideas and design strategies intact.
 
 At first, development occurred exclusively inside a VM and ISOs were occasionally generated as official releases. This was not a good approach, as things broke and there was no way of telling which changes caused what, so it was scrapped and restarted from scratch.\
 Releases of the "old" Zenith are currently archived on the `mega.nz` website:
