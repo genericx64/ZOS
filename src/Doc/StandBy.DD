@@ -19,4 +19,5 @@ $FG,2$  <CTRL-D>$FG$	   File Manager
   $FG,2$<CTRL-L>$FG$	   Text Menu
 $FG,2$    <F7>$FG$	   God Word
 $FG,2$ <SHIFT-F7>$FG$    God Passage
+$FG,2$    <F6>$FG$	   God Song
 $FG,2$<ALT-SHIFT-A>$FG$  Close AC
